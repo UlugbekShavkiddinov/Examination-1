@@ -1,6 +1,15 @@
+$color-yellow: #FCB72B;
+$color-greyer: #495567;
+$color-grey: #939CAA;
+$color-whiter: #E5ECF4;
+$color-snow: #F2F5F9;
+$color-yellow-w:#FFF4DF;
+
+// Generals
 .container {
     max-width: 1110px;
     padding: 0 10px;
+    margin: 0 auto;
 
 }
 
@@ -10,11 +19,46 @@ body {
     overflow-x: hidden;
     font-size: 16px;
     background: white;
+    font-family: "Lexend Deca", sans-serif;
+    color: $color-grey;
 }
 
-.section {
-    display: flex;
+@mixin circle ($w, $height, $r){
+    width: $w;
+    height: $height;
+    border-radius: $r;
+    
 }
+
 a {
     text-decoration: none;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Space Mono";
+    color: $color-greyer;
+}
+
+.btn {
+    background: $color-yellow;
+    color: white;
+    padding: 14px 39px ;
+    font-weight: 700;
+    font-size: .9375rem;
+    font-family: "Space Mono";
+    text-transform: capitalize;
+   text-align: center;
+    display: inline-block;
+    min-width: 180px;
+
+    &:hover {
+        border: 3px solid $color-yellow;
+        color: $color-yellow;
+        background: white;
+    }
+}
+

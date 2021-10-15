@@ -1,9 +1,40 @@
+@charset "utf-8";
 @import "./variables";
 @import "./normalize";
 @import "./fonts";
 @import "./general";
 @import "./all_blocks/all-blocks";
-@import "./all_blocks/container";
-@import "./all_blocks/footer";
-@import "./all_blocks/header";
-@import "./all_blocks/visually-hidden";
+
+.card {
+    margin-top: 184px;
+    & .container {
+        display: flex;
+    }
+    &__item {
+        width: 33.333%;
+        margin: 0 15px;
+        &-icon {
+        @include circle(96px, 96px, 100px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $color-yellow;
+    }
+}
+    & .card__item-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 28px;
+        margin-bottom: 27px;
+        margin-top: 40px;
+    }
+    }
+    & .item-1 {
+            margin-left: 0;
+    }
+    & .item-2 {
+            margin-right: 0;
+    }
+
+
+
