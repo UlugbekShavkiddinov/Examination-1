@@ -13,21 +13,6 @@ $color-yellow-w:#FFF4DF;
 
 }
 
-@media (max-width:1024px) {
-    .container {
-        max-width: 950px;
-    }
-}
-@media (max-width:750px) {
-    .container {
-        max-width: 650px;
-    }
-}
-@media (max-width:500px) {
-    .container {
-        max-width: 400px;
-    }
-}
 
 body {
     margin: 0;

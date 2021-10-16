@@ -90,24 +90,6 @@ select {
   margin: 0 auto;
 }
 
-@media (max-width: 1024px) {
-  .container {
-    max-width: 950px;
-  }
-}
-
-@media (max-width: 750px) {
-  .container {
-    max-width: 650px;
-  }
-}
-
-@media (max-width: 500px) {
-  .container {
-    max-width: 400px;
-  }
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -405,6 +387,12 @@ footer {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 573px;
+  }
 }
 
 .card {
