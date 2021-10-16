@@ -16,7 +16,6 @@
             padding: 16px;
             margin-top: 20px;
             margin-bottom: 19px;
-           
             & a {
                 color: inherit; 
             }
@@ -29,12 +28,12 @@
     }
 }
 
-
-.hero {
+#header {
     background: url(../images/Bitmap.jpg);
     height: 650px;
-
+    background-size: cover;
 }
+
 
 
 h1 {
