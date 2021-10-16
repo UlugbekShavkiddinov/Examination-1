@@ -125,6 +125,7 @@ h6 {
   text-align: center;
   display: inline-block;
   min-width: 180px;
+  margin-top: 40px;
 }
 
 .btn:hover {
@@ -196,7 +197,6 @@ h1 + p {
   width: 405px;
   position: relative;
   margin-left: 91px;
-  margin-bottom: 40px;
   line-height: 25px;
 }
 
@@ -223,20 +223,23 @@ h1 + p::before {
 
 .card {
   margin-top: 184px;
+  position: relative;
+}
+
+.card::before {
+  content: " ";
+  width: 974px;
+  height: 15px;
+  background-color: #E5ECF4;
+  display: inline-block;
+  position: absolute;
+  top: 46px;
 }
 
 .card .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.card .item-1 {
-  margin-left: 0;
-}
-
-.card .item-2 {
-  margin-right: 0;
 }
 
 .card__item {
@@ -258,13 +261,83 @@ h1 + p::before {
       -ms-flex-align: center;
           align-items: center;
   background: #FCB72B;
+  position: relative;
+  z-index: 50;
 }
 
-.card__item-title {
+.card .card__item-title {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 28px;
   margin-bottom: 27px;
   margin-top: 40px;
+}
+
+.card .item-1 {
+  margin-left: 0;
+}
+
+.card .item-2 {
+  margin-right: 0;
+}
+
+.card2 {
+  height: 445px;
+}
+
+.card2 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card2 .container .card2-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 200px;
+}
+
+.card2 .container .card2-item:nth-child(odd) > .card2__text {
+  -webkit-box-ordinal-group: 31;
+      -ms-flex-order: 30;
+          order: 30;
+}
+
+.card2 .container .card2-item:nth-child(odd) > .card2__img {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.card2 .container .card2-item .card2__text {
+  width: 445px;
+}
+
+.card2__text-title {
+  font-size: 3rem;
+  line-height: 48px;
+  letter-spacing: -2.14px;
+}
+
+.card2__text-title + p {
+  margin-top: 24px;
+}
+
+.card2__img {
+  overflow: hidden;
+  width: 445px;
+  height: 445px;
+  border-radius: 1000px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -7,6 +7,17 @@
 
 .card {
     margin-top: 184px;
+    position: relative;
+    &::before {
+        content: " ";
+        width: 974px;
+        height: 15px;
+        background-color: $color-whiter;
+        display: inline-block;
+        position: absolute;
+        top: 46px;
+
+    }
     & .container {
         display: flex;
     }
@@ -19,6 +30,8 @@
         justify-content: center;
         align-items: center;
         background: $color-yellow;
+        position: relative;
+        z-index: 50;
     }
 }
     & .card__item-title {
@@ -28,7 +41,6 @@
         margin-bottom: 27px;
         margin-top: 40px;
     }
-    }
     & .item-1 {
             margin-left: 0;
     }
@@ -36,9 +48,51 @@
             margin-right: 0;
     }
 
-
+    }
+    // Card2
 
     .card2 {
-        width: 30%;
+    height: 445px;
+        & .container{
+        display: flex;
+        flex-direction: column;
+            & .card2-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 200px;
+            &:nth-child(odd) > .card2__text {
+                order: 30;
+            }
+            &:nth-child(odd) > .card2__img {
+                order: 3;
+            }
+                & .card2__text {
+                width: 445px;
+                }
+            }
+
+    }
+
+
+
+        
     }
  
+    .card2__text-title {
+        font-size: 3rem;
+        line-height: 48px;
+        letter-spacing: -2.14px;
+        +p {
+            margin-top: 24px;
+
+        }
+    }
+
+
+    .card2__img {
+        overflow: hidden;
+        width: 445px;
+        height: 445px;
+        border-radius: 1000px;
+    }
