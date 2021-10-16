@@ -19,6 +19,9 @@
             & a {
                 color: inherit; 
             }
+            &:hover, :active {
+                color: $color-yellow;
+            }
         }
     }
     & .btn {
@@ -28,40 +31,63 @@
     }
 }
 
+
+
+// Header
 #header {
     background: url(../images/Bitmap.jpg);
     height: 650px;
     background-size: cover;
-}
-
-
-
-h1 {
-    font-size: 3.5rem;
-    color: white;
-    max-width: 500px;
-    line-height: 56px;
-    font-weight: 700;
-    letter-spacing: -2.5px;
-    padding-top: 153px;
-    padding-bottom: 40px;
-    &+p {
+    position: relative;
+    h1 {
+        font-size: 3.5rem;
         color: white;
-        width: 405px;
+        max-width: 500px;
+        line-height: 56px;
+        font-weight: 700;
+        letter-spacing: -2.5px;
+        padding-top: 153px;
+        padding-bottom: 40px;
+        
+    }
+    .hero-arrows {
+        display: flex;
         position: relative;
-        margin-left: 91px;
-        line-height: 25px;
-        &::before {
-            content: "";
-            width: 202.5px !important;
-            border: 15px solid $color-yellow;
+        p {
+            color: white;
+            max-width: 405px ;
+            position: relative;
+            line-height: 25px;
+            margin-left: 51px;
+            font-size: 0.9375rem;
+            margin-right: 40px;    
+        }
+        :nth-child(1) {
             position: absolute;
             right: 100%;
-            top: 50%;
-            margin-right: 57px;
+            margin-top: 50px;
         }
+        :nth-child(3) {
+            margin-top: 50px;
+        }
+    :last-child {
+        transform: rotate(180deg);
+        position: absolute;
+        top: 115px;
+        right: 130px;
+    }
     }
 }
+
+#header h1~ .btn {
+        margin-top: 0;
+    }
+
+
+
+
+
+
 
 
 

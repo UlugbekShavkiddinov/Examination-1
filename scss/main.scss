@@ -4,19 +4,19 @@
 @import "./fonts";
 @import "./general";
 @import "./all_blocks/all-blocks";
+@import "./media.scss"
 
 .card {
     margin-top: 184px;
     position: relative;
     &::before {
         content: " ";
-        width: 974px;
+        max-width: 974px;
         height: 15px;
         background-color: $color-whiter;
         display: inline-block;
         position: absolute;
         top: 46px;
-
     }
     & .container {
         display: flex;
@@ -51,48 +51,44 @@
     }
     // Card2
 
-    .card2 {
-    height: 445px;
-        & .container{
+.card2 {
+height: 445px;
+    & .container{
+    display: flex;
+    flex-direction: column;
+        & .card2-item {
         display: flex;
-        flex-direction: column;
-            & .card2-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-top: 200px;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 200px;
             &:nth-child(odd) > .card2__text {
-                order: 30;
+            order: 30;
             }
             &:nth-child(odd) > .card2__img {
-                order: 3;
+            order: 3;
             }
-                & .card2__text {
-                width: 445px;
-                }
+            & .card2__text {
+            width: 445px;
             }
-
-    }
-
-
-
-        
-    }
- 
-    .card2__text-title {
+        }
+        .card2__text-title {
         font-size: 3rem;
         line-height: 48px;
         letter-spacing: -2.14px;
-        +p {
+            +p {
             margin-top: 24px;
-
+            }
         }
-    }
-
-
-    .card2__img {
+        .card2__img {
         overflow: hidden;
-        width: 445px;
-        height: 445px;
+        max-width: 445px;
+        max-height: 445px;
         border-radius: 1000px;
     }
+    }
+}
+
+ 
+
+
+  
