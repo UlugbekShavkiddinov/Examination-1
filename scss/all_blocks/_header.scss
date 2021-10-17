@@ -73,13 +73,9 @@
         }
         :nth-child(3) {
             margin-top: 50px;
+            max-width: 447px;
+            // transform: rotate(180deg);
         }
-    :last-child {
-        transform: rotate(180deg);
-        position: absolute;
-        top: 115px;
-        right: 130px;
-    }
     }
 }
 

@@ -22,6 +22,9 @@ body {
     background: white;
     font-family: "Lexend Deca", sans-serif;
     color: $color-grey;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 @mixin circle ($w, $height, $r){
@@ -55,7 +58,7 @@ h6 {
    text-align: center;
     display: inline-block;
     min-width: 180px;
-margin-top: 40px;
+    margin-top: 40px;
     &:hover {
         border: 3px solid $color-yellow;
         color: $color-yellow;
