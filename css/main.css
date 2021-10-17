@@ -360,7 +360,7 @@ footer .footer-bottom .section .social-links .social-links__item:hover path {
 }
 
 #header {
-  background: url(../images/Bitmap.jpg);
+  background: url(../../images/header-o-big.jpg);
   height: 650px;
   background-size: cover;
   position: relative;
@@ -584,7 +584,7 @@ footer .footer-bottom .section .social-links .social-links__item:hover path {
     max-width: 573px;
   }
   #header {
-    background: url(../images/bg-header-medium.jpg);
+    background: url(../images/header-o-mobile.jpg);
   }
   #header * {
     text-align: center;
@@ -891,11 +891,14 @@ footer .footer-bottom .section .social-links .social-links__item:hover path {
     padding: 0;
     margin: 24px 98.31px 24px 32px;
   }
+  #navbar .section .navbar__menu:active {
+    background: url(../images/menu-x.svg);
+  }
   #navbar .section .btn {
     display: none;
   }
   #header {
-    background: url(../images/bg-header-mobile.jpg);
+    background: url(../images/header-o-small.jpg);
     background-size: cover;
     max-width: 100vw;
   }
@@ -1158,5 +1161,9 @@ footer .footer-bottom .section .social-links .social-links__item:hover path {
 .for-margin {
   width: 100%;
   height: 104px;
+}
+
+#header {
+  background: url(../images/header-o-big.jpg);
 }
 /*# sourceMappingURL=main.css.map */

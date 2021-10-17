@@ -139,7 +139,7 @@
     }
     // Header
 #header {
-    background: url(../images/bg-header-medium.jpg);
+    background: url(../images/header-o-mobile.jpg);
 & * {
     text-align: center;
     margin-left: auto;
@@ -423,6 +423,9 @@ display: none;
         border: none;
         padding: 0;
         margin: 24px 98.31px 24px 32px;
+        &:active {
+            background: url(../images/menu-x.svg);
+        }
     }
     & .btn {
         // margin-left: auto;
@@ -432,7 +435,7 @@ display: none;
     }
 }
     #header {
-        background: url(../images/bg-header-mobile.jpg);
+        background: url(../images/header-o-small.jpg);
         background-size: cover;
         max-width: 100vw;
         h1 {
@@ -677,4 +680,7 @@ display: none;
 .for-margin {
     width: 100%;
     height: 104px;
+}
+#header {
+    background: url(../images/header-o-big.jpg);
 }
